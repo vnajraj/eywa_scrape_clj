@@ -1,0 +1,12 @@
+type Mutation {
+    dhmzScraperClj: STDResult
+    @robot(
+        euuid: "d50900eb-8cea-45ca-ba3c-726dd593a0b3"
+        name: "Scrape DHMZ using Clojure"
+        task_message: "DHMZ scrape started"
+    )
+    @execute(commands:[
+        "source .env"
+        "lein run"
+    ])
+}
